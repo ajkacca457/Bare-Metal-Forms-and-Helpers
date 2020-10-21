@@ -1,16 +1,35 @@
+<%= link_to "Home", users_path, class:"home"%>
+
+<div class="container">
+
+<% if @user.errors.any? %>
+<h2>The following errors prevented from creating the user:</h2>
+<ul>
+<% @user.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+<% end %>
+
+
 <h1>Create a new user</h1>
 
+<!-- traditional form
 <form action='/users' method='POST' accept-charset="UTF-8">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <label for="username">Username:</label> <br>
+    <label for="username">Username:</label>
     <input type="text" id="username" name="user[name]"><br><br>
 
-    <label for="email">Email:</label> <br>
+    <label for="email">Email:</label>
     <input type="email" id="email" name="user[email]"><br><br>
 
-    <label for="password">Password:</label> <br>
+    <label for="password">Password:</label>
     <input type="password" id="password" name="user[password]"><br><br>
 
     <input type="submit" value="Submit">
 
 </form>
+-->
+
+<%= render "form" %>
+</div>
