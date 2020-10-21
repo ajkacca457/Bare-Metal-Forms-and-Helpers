@@ -10,5 +10,4 @@ class User < ApplicationRecord
   validates :name, presence: true, uniqueness: true, length: { minimum: 5, maximum: 25 }
   validates :email, presence: true, uniqueness: true, length: { minimum: 5, maximum: 20 }
   validates :password, presence: true, format: { with: PASSWORD_FORMAT }, length: { minimum: 8, maximum: 20 }
-
 end

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +15,100 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.heading {
+ margin: 0;
+ background-color: #42647F;
+ text-align: center;
+ color:white;
+ padding: 1% 0;
+}
+
+.tablecont {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size:.7em;
+}
+
+.table {
+  margin: 2% auto;
+  background-color:#6E7B8B;
+}
+
+.thead {
+ color:white;
+ text-decoration: none;
+}
+
+td {
+  background-color: #BCD2EE;
+  padding: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  color:white;
+  background-color: purple;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.btn-2 {
+  text-decoration: none;
+  color: white;
+  background-color:#6F7285;
+  padding: 5%;
+  border-radius: 5px;
+  border:1px white solid;
+}
+
+.container{
+  background-color: #7AA9DD;
+  width: 30%;
+  margin:1% auto;
+  padding: 1%;
+  color:white;
+  font-size: 1.2em;
+}
+
+.input {
+  width: 95%;
+  height: 30px;
+  padding-left: 15px;
+  font-size: 1.1em;
+}
+
+.btn-3 {
+  background-color: purple;
+  padding: 1% 2%;
+  border: 1px white solid;
+  color: white;
+}
+
+.showcont {
+  background-color:#FF8C00;
+  width: 30%;
+  margin: 1% auto;
+  color:white;
+  font-size: 1.3em;
+  padding: 1%;
+  text-align: center;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+.home {
+  background-color: green;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  font-size: 120%;
+}
