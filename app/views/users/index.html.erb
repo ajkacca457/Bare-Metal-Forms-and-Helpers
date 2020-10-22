@@ -1,0 +1,28 @@
+<h1 class="heading">Welcome to User generator</h1>
+
+<div class="tablecont">
+
+<h1>All the existing user in the database: <h1>
+
+
+<%= link_to "+ Create New User", new_user_path, class:"btn"%>
+
+  <table class="table">
+    <tr class="thead">
+      <th>User Name</th>
+      <th>User Email</th>
+    </tr>
+
+<% @users.each do |user|%>
+
+<tr style="font-weight:100;">
+  <td> <%= user.name %> </td>
+  <td> <%= user.email %> </td>
+  <td> <%= link_to "Edit", edit_user_path(user), class:"btn-2" %> </td>
+  <td> <%= link_to "Show", user_path(user), class:"btn-2" %> </td>
+</tr>
+
+<% end %>
+
+  </table>
+</div>

@@ -1,0 +1,18 @@
+<%= link_to "Home", users_path, class:"home"%>
+
+<div class="container">
+
+<% if @user.errors.any? %>
+<h2>The following errors prevented from updating the user:</h2>
+<ul>
+<% @user.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+<% end %>
+
+
+<h1>Edit user</h1>
+<%= render "form" %>
+
+</div>
