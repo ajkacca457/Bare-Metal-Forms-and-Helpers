@@ -7,7 +7,10 @@ class User < ApplicationRecord
     (?=.*[[:^alnum:]]) # Must contain a symbol
   /x.freeze
 
+  REGEX_PATTERN = /\A[a-z0-9\+\-_\.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
+
   validates :name, presence: true, uniqueness: true, length: { minimum: 5, maximum: 25 }
-  validates :email, presence: true, uniqueness: true, length: { minimum: 5, maximum: 20 }
+  validates :email, presence: true, format: { with: REGEX_PATTERN },
+                    uniqueness: true, length: { minimum: 5, maximum: 25 }
   validates :password, presence: true, format: { with: PASSWORD_FORMAT }, length: { minimum: 8, maximum: 20 }
 end

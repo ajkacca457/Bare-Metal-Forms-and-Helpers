@@ -16,45 +16,45 @@
  *= require_self
  */
 
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .heading {
- margin: 0;
- background-color: #42647F;
- text-align: center;
- color:white;
- padding: 1% 0;
+  margin: 0;
+  background-color: #42647f;
+  text-align: center;
+  color: white;
+  padding: 1% 0;
 }
 
 .tablecont {
   width: 60%;
   margin: auto;
   text-align: center;
-  font-size:.7em;
+  font-size: 0.7em;
 }
 
 .table {
   margin: 2% auto;
-  background-color:#6E7B8B;
+  background-color: #6e7b8b;
 }
 
 .thead {
- color:white;
- text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 td {
-  background-color: #BCD2EE;
+  background-color: #bcd2ee;
   padding: 10px;
 }
 
 .btn {
   text-decoration: none;
-  color:white;
+  color: white;
   background-color: purple;
   padding: 1%;
   border-radius: 5px;
@@ -63,18 +63,18 @@ td {
 .btn-2 {
   text-decoration: none;
   color: white;
-  background-color:#6F7285;
+  background-color: #6f7285;
   padding: 5%;
   border-radius: 5px;
-  border:1px white solid;
+  border: 1px white solid;
 }
 
-.container{
-  background-color: #7AA9DD;
+.container {
+  background-color: #7aa9dd;
   width: 30%;
-  margin:1% auto;
+  margin: 1% auto;
   padding: 1%;
-  color:white;
+  color: white;
   font-size: 1.2em;
 }
 
@@ -93,10 +93,10 @@ td {
 }
 
 .showcont {
-  background-color:#FF8C00;
+  background-color: #ff8c00;
   width: 30%;
   margin: 1% auto;
-  color:white;
+  color: white;
   font-size: 1.3em;
   padding: 1%;
   text-align: center;
@@ -109,6 +109,6 @@ td {
   padding: 1%;
   text-align: center;
   text-decoration: none;
-  color:white;
+  color: white;
   font-size: 120%;
 }
