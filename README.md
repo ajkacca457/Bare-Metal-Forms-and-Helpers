@@ -7,7 +7,7 @@ new user and store their information in the database.
 ![screenshot](./app/assets/images/interface2.png)
 ![screenshot](./app/assets/images/interface3.png)
 
-##Features
+## Features
 This project can perform the following features :
 
 - It can create users once the username, email, and password are entered on the form.
